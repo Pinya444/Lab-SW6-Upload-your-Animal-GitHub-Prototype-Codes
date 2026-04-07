@@ -5,14 +5,15 @@ public class AnimalRegistry {
     private Map<String, Animal> prototypes = new HashMap<>();
 
     public AnimalRegistry() {
-        prototypes.put("sheep", new Sheep("Default Sheep"));
+        prototypes.put("sheep", new Sheep("Default"));
         prototypes.put("cow", new Cow());
         prototypes.put("horse", new Horse());
     }
 
     public Animal createSheep(String name) {
         Sheep sheep = (Sheep) prototypes.get("sheep").clone();
-        return new Sheep(name); // customize name
+        sheep.setName(name);
+        return sheep;
     }
 
     public Animal createCow() {

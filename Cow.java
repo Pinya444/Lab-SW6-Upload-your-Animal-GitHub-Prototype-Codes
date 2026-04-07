@@ -5,7 +5,7 @@ public class Cow implements Animal {
 
     public Cow() {
         this.legs = 4;
-        this.sound = "Moo!";
+        this.sound = "Moo";
         this.food = "Grass";
     }
 
@@ -24,19 +24,12 @@ public class Cow implements Animal {
         return "Cow";
     }
 
-    public String getSound() {
-        return sound;
-    }
+    // Getters & Setters
+    public int getLegs() { return legs; }
 
-    public void setSound(String sound) {
-        this.sound = sound;
-    }
+    public String getSound() { return sound; }
+    public void setSound(String sound) { this.sound = sound; }
 
-    public String getFood() {
-        return food;
-    }
-
-    public void setFood(String food) {
-        this.food = food;
-    }
+    public String getFood() { return food; }
+    public void setFood(String food) { this.food = food; }
 }

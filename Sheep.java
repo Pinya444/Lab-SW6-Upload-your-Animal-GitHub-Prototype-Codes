@@ -6,7 +6,7 @@ public class Sheep implements Animal {
 
     public Sheep(String name) {
         this.legs = 4;
-        this.sound = "Baa!";
+        this.sound = "Baa";
         this.food = "Grass";
         this.name = name;
     }
@@ -25,13 +25,11 @@ public class Sheep implements Animal {
     public String getType() {
         return "Sheep";
     }
-    
-        public String getName() {
-    return name;
-    }
 
-        public void setName(String name) {
-    this.name = name;
-    }
+    // Getters & Setters
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
+    public int getLegs() { return legs; }
+    public String getFood() { return food; }
 }
